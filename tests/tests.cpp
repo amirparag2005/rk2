@@ -3,9 +3,9 @@
 
 #include "main.cpp"
 
-class CatMock : public Cat{}
-class DogMock : public Dog{}
-class BirdMock : public Bird{}
+class CatMock : public Cat{};
+class DogMock : public Dog{};
+class BirdMock : public Bird{};
 
 
 //First test
