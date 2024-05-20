@@ -4,12 +4,15 @@
 #include "main.cpp"
 
 class CatMock : public Cat{
+    public:
     MOCK_METHOD0(name, std::string());
 };
 class DogMock : public Dog{
+    public:
     MOCK_METHOD0(name, std::string());
 };
 class BirdMock : public Bird{
+    public:
     MOCK_METHOD0(name, std::string());
 };
 
