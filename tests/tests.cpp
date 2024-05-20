@@ -3,9 +3,15 @@
 
 #include "main.cpp"
 
-class CatMock : public Cat{};
-class DogMock : public Dog{};
-class BirdMock : public Bird{};
+class CatMock : public Cat{
+    MOCK_CONST_METHOD0(name, std::string());
+};
+class DogMock : public Dog{
+    MOCK_CONST_METHOD0(name, std::string());
+};
+class BirdMock : public Bird{
+    MOCK_CONST_METHOD0(name, std::string());
+};
 
 
 //First test
