@@ -3,6 +3,19 @@
 
 #include "main.cpp"
 
+class Cat : public IAnimal {
+  public:
+    std::string name() const override { return "Cat"; }
+};
+class Dog : public IAnimal {
+  public:
+    std::string name() const override { return "Dog"; }
+};
+class Bird : public IAnimal {
+  public:
+    std::string name() const override { return "Bird"; }
+};
+
 class CatMock : public Cat{
     public:
     MOCK_CONST_METHOD0(name, std::string());
