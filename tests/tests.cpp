@@ -1,7 +1,12 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-#include "main.cpp"
+//#include "main.cpp"
+
+struct IAnimal {
+    virtual std::string name() const = 0;
+    virtual ~IAnimal() = default;
+};
 
 class Cat : public IAnimal {
   public:
