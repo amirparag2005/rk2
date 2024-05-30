@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-#include "main.cpp"
+#include "cmain.cpp"
 
 class CatMock : public Cat{
     public:
