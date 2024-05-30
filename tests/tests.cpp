@@ -36,21 +36,21 @@ class BirdMock : public Bird{
 
 
 //First test
-TEST(CatMock, Mock){
+TEST(CatMock, firstTest){
     CatMock cat;
     EXPECT_CALL(cat, name()).Times(1);
     cat.name();
 }
 
 //Second test
-TEST(DogMock, Mock){
+TEST(DogMock, secondTest){
     DogMock dog;
     EXPECT_CALL(dog, name()).Times(1);
     dog.name();
 }
 
 //Third test
-TEST(BirdMock, Mock){
+TEST(BirdMock, thirdTest){
     BirdMock bird;
     EXPECT_CALL(bird, name()).Times(1);
     bird.name();
